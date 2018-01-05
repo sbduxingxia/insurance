@@ -1,7 +1,8 @@
 package com.zhp.insurance.base;
 
+import com.github.pagehelper.PageHelper;
 import com.zhp.insurance.mysql.entity.UserInfo;
-import com.zhp.insurance.mysql.mapper.UserInfoMapper;
+import com.zhp.insurance.mysql.dao.UserInfoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ import java.util.List;
 @Service
 public class HelloBootServiceImpl implements HelloBootService {
     @Autowired
-    private UserInfoMapper userInfoMapper;
+    private UserInfoDao userInfoDao;
     @Override
     public String helloBoot() {
         return "Hello Spring Boot";
@@ -22,7 +23,8 @@ public class HelloBootServiceImpl implements HelloBootService {
 
     @Override
     public String getUserName(Integer id) {
-        UserInfo userInfo = userInfoMapper.findUserById(id);
+        //Dao接口调用XML的查询语句
+        UserInfo userInfo = userInfoDao.selectByPrimaryKey(id);
         if(userInfo==null){
             return "";
         }
@@ -31,6 +33,8 @@ public class HelloBootServiceImpl implements HelloBootService {
 
     @Override
     public List<UserInfo> queryUserList() {
-        return userInfoMapper.queryUserList();
+        //TODO 分页查询使用Demo
+        PageHelper.startPage(1,1);
+        return userInfoDao.queryUserList();
     }
 }

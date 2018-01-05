@@ -14,6 +14,13 @@
         <dependency>
             <groupId>com.zhp.insurance</groupId>
             <artifactId>insurance-mysql</artifactId>
+            <version>${project.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.zhp.insurance</groupId>
+                    <artifactId>insurance-mysql</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

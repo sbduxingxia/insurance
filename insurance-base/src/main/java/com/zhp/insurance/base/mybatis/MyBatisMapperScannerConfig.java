@@ -1,9 +1,10 @@
 package com.zhp.insurance.base.mybatis;
 
-import org.mybatis.spring.mapper.MapperScannerConfigurer;
+//import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 
 /**
  * @author zhp.dts
@@ -20,7 +21,7 @@ public class MyBatisMapperScannerConfig {
         //获取之前注入的beanName为sqlSessionFactory的对象
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
         //指定xml配置文件的路径
-        mapperScannerConfigurer.setBasePackage("com.zhp.insurance.mysql.mapper");
+        mapperScannerConfigurer.setBasePackage("com.zhp.insurance.mysql");
         return mapperScannerConfigurer;
     }
 }

@@ -96,31 +96,6 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java}</version>
             </dependency>
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis-spring</artifactId>
-                <version>${mybatis-spring-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.ibatis</groupId>
-                <artifactId>ibatis-sqlmap</artifactId>
-                <version>${ibatis-sqlmap}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-core</artifactId>
-                <version>${mybatis-generator-core}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-core</artifactId>
-                <version>${tomcat-embed-core}</version>
-            </dependency>
-            <dependency>
-                <groupId>tk.mybatis</groupId>
-                <artifactId>mapper-spring-boot-starter</artifactId>
-                <version>${mybatis-mapper-version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -140,18 +115,6 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <!--应用名称-->
-                <dubbo.application.name>insurance-server</dubbo.application.name>
-                <!--注册中心类型-->
-                <dubbo.registry.protocol>zookeeper</dubbo.registry.protocol>
-                <!--注册中心地址-->
-                <dubbo.registry.address>127.0.0.1:12181</dubbo.registry.address>
-                <!--暴露服务方式-->
-                <dubbo.protocol.name>dubbo</dubbo.protocol.name>
-                <!--暴露服务端口-->
-                <dubbo.protocol.port.20880>20880</dubbo.protocol.port.20880>
-            </properties>
         </profile>
         <profile>
             <id>test</id>

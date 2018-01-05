@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class DubboClientConfig extends DubboBaseConfig{
     @Bean
     public ReferenceBean<HelloBootService> helloBootServiceReference(){
-        ReferenceBean<HelloBootService> ref = new ReferenceBean<>();
+        ReferenceBean<HelloBootService> ref = new ReferenceBean<HelloBootService>();
         ref.setVersion(contants.getBaseAppName());
         ref.setInterface(HelloBootService.class);
         ref.setId(HelloBootService.class.getSimpleName()+"Impl");

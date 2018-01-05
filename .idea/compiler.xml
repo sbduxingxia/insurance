@@ -28,7 +28,7 @@
       <module name="insurance-common" target="1.8" />
       <module name="insurance-mybatis" target="1.8" />
       <module name="insurance-mysql" target="1.6" />
-      <module name="insurance-web" target="1.8" />
+      <module name="insurance-web" target="1.6" />
       <module name="mysql" target="1.8" />
     </bytecodeTargetLevel>
   </component>
