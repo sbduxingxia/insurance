@@ -54,4 +54,9 @@ public class DevConfigContants implements IConfigContants {
     public String getJdbcUserPwd() {
         return jdbcUserPwd;
     }
+
+    @Override
+    public Boolean isLogSlowSql() {
+        return true;
+    }
 }

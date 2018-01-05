@@ -17,4 +17,8 @@ public interface IConfigContants {
     String getJdbcUrl();
     String getJdbcUserName();
     String getJdbcUserPwd();
+    /**
+     * druid配置
+     */
+    Boolean isLogSlowSql();
 }

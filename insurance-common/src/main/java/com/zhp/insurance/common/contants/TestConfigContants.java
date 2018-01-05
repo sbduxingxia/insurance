@@ -45,4 +45,9 @@ public class TestConfigContants implements IConfigContants {
     public String getJdbcUserPwd() {
         return null;
     }
+
+    @Override
+    public Boolean isLogSlowSql() {
+        return null;
+    }
 }
