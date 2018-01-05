@@ -1,6 +1,13 @@
 package com.zhp.insurance.mysql.entity;
 
-public class UserInfo {
+import java.io.Serializable;
+
+/**
+ * @author zhp.dta
+ */
+public class UserInfo implements Serializable{
+
+    private static final long serialVersionUID = 8091487598059110981L;
     private Integer id;
 
     private String userName;
