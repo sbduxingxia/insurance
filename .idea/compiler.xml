@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base" />
+        <module name="insurance-base" />
+        <module name="insurance-base-api" />
+        <module name="insurance-common" />
+        <module name="insurance-mysql" />
+        <module name="insurance-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.8" />
+      <module name="base-api" target="1.8" />
+      <module name="com.zhp.insurance.base" target="1.8" />
+      <module name="com.zhp.insurance.base-api" target="1.8" />
+      <module name="com.zhp.insurance.common" target="1.8" />
+      <module name="com.zhp.insurance.mysql" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="insurance" target="1.8" />
+      <module name="insurance-base" target="1.6" />
+      <module name="insurance-base-api" target="1.8" />
+      <module name="insurance-common" target="1.8" />
+      <module name="insurance-mybatis" target="1.8" />
+      <module name="insurance-mysql" target="1.6" />
+      <module name="insurance-web" target="1.8" />
+      <module name="mysql" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
