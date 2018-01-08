@@ -50,4 +50,19 @@ public class ProdConfigContants implements IConfigContants {
     public Boolean isLogSlowSql() {
         return null;
     }
+
+    @Override
+    public String getRedisAddress() {
+        return null;
+    }
+
+    @Override
+    public String getRedisPort() {
+        return null;
+    }
+
+    @Override
+    public String getRedisPassword() {
+        return null;
+    }
 }

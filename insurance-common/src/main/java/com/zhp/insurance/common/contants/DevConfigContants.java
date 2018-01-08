@@ -15,6 +15,10 @@ public class DevConfigContants implements IConfigContants {
     protected final String jdbcUserName="root";
     protected final String jdbcUserPwd="root";
 
+    protected final String redisAddress="127.0.0.1";
+    protected final String redisPort="6379";
+    protected final String redisPwd="";
+
     @Override
     public String getBaseAppName() {
         return baseAppName;
@@ -58,5 +62,20 @@ public class DevConfigContants implements IConfigContants {
     @Override
     public Boolean isLogSlowSql() {
         return true;
+    }
+
+    @Override
+    public String getRedisAddress() {
+        return redisAddress;
+    }
+
+    @Override
+    public String getRedisPort() {
+        return redisPort;
+    }
+
+    @Override
+    public String getRedisPassword() {
+        return redisPwd;
     }
 }

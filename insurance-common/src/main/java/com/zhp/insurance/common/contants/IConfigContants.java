@@ -21,4 +21,10 @@ public interface IConfigContants {
      * druid配置
      */
     Boolean isLogSlowSql();
+    /**
+     * redis配置
+     */
+    String getRedisAddress();
+    String getRedisPort();
+    String getRedisPassword();
 }

@@ -12,4 +12,5 @@ public interface HelloBootService {
     String helloBoot();
     String getUserName(Integer id);
     List<UserInfo> queryUserList();
+    UserInfo getUserInfo(Integer id);
 }

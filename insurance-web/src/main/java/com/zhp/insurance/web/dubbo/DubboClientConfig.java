@@ -16,7 +16,7 @@ public class DubboClientConfig extends DubboBaseConfig{
         ReferenceBean<HelloBootService> ref = new ReferenceBean<HelloBootService>();
         ref.setVersion(contants.getBaseAppName());
         ref.setInterface(HelloBootService.class);
-        ref.setId(HelloBootService.class.getSimpleName()+"Impl");
+        ref.setId(HelloBootService.class.getSimpleName());
         ref.setTimeout(5000);
         ref.setRetries(3);
         ref.setCheck(false);
